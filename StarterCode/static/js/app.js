@@ -6,10 +6,6 @@ d3.json(file_path).then(function(data){
   dropdown(data);
 });
 
-// wait for d3 promise to be fulfulled
-//for each item in names attribute, creat a option elemnt in 
-//html under the select element
-// drop down menu
 //program optionChanged to match html
 function dropdown(sampleData) {
   sampleData['names'].forEach(name=>{
@@ -25,13 +21,8 @@ function optionChanged(selected) {
     buildBar(selected);
     buildTable(selected);
 };
-// could do it this way but already coded for us in the html 
-// d3.select('#selDataset').on('change', optionChanged(this.value));
 
-// build bar chart based on selection
-//take parameter of the selection(int)
 //filter down to top 10 OTUs
-//inverse sort
 function buildBar(sampleId) {
   d3.json(file_path).then(function(data){
     var samples=data['samples'];
@@ -64,10 +55,8 @@ function buildBar(sampleId) {
   });
 };
 
-//build the metada from json
-//d3.json-> read the date from samples.json again
 // forEach object.entries add new lih6
-//
+
 function buildTable(sampleId) {
   d3.json(file_path).then(function(data){
     var metadata=data['metadata'];
@@ -81,21 +70,3 @@ function buildTable(sampleId) {
     });
   });
 };
-
-
-// //Do we need to unpack the data, or did it come over ok?
-// function unpack(dataArr, index) {
-//     return dataArr.map(row=>row[index])
-//     console.log(dataArr)
-// };
-
-// CAN I SEE MY ELEMENTS INDIVIDUALLY
-// d3.select("ul").selectAll("li");
-
-// d3.select("ul").selectAll("li")
-//     .each(function(d, i) {
-//       console.log("element", this);
-//       console.log("data", d);
-//       console.log("index", i);
-//     });
-
