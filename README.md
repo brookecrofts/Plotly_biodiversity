@@ -6,6 +6,6 @@
 
 #### Multiple interactive charts created to display the data and make it more understandable for the reader.
 
-![BBB](https://github.com/brookecrofts/Plotly_biodiversity/blob/master/Images/BBB.png)
-![dropdown](https://github.com/brookecrofts/Plotly_biodiversity/blob/master/Images/savmple_dd.png)
-![bubble](https://github.com/brookecrofts/Plotly_biodiversity/blob/master/Images/bubble_plot.png)
+![BBB](https://github.com/brookecrofts/Plotly_biodiversity/blob/master/Images/BBB.PNG)
+![dropdown](https://github.com/brookecrofts/Plotly_biodiversity/blob/master/Images/sample_dd.PNG)
+![bubble](https://github.com/brookecrofts/Plotly_biodiversity/blob/master/Images/bubble_plot.PNG)
